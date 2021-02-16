@@ -60,4 +60,4 @@
 
 * belongs_to :user
 * belongs_to :item
-* belongs_to :sending_destination
+* has_one :sending_destination
