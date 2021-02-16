@@ -4,7 +4,7 @@
 | Column             | Type                | Options                            |
 |--------------------|---------------------|------------------------------------|
 | nickname           | string              | null: false                        |
-| email              | string              | unique: true                       |
+| email              | string              | null: false,unique: true                       |
 | encrypted_password | string              | null: false　　　　　　　　　         |
 | first_name         | string              | null: false                   　　　|
 | family_name        | string              | null: false                  　　　 |
@@ -38,15 +38,14 @@
 | name               | string              | null: false                   |
 | introduction       | text                | null: false                   |
 | price              | integer             | null: false                   |
-| item_condition     | references          | null: false                   |
+| item_condition_id  | integer             | null: false                   |
 | postage_payer_id   | integer             | null: false                   |
 | prefecture_id      | integer             | null: false                   |
 | preparation_day_id | integer             | null: false                   |
-| category           | references          | null: false                   |
-| trading_status     | enum                | null: false                   |
+| category_id        | integer             | null: false                   |
+| user               | references          | null: false,foreign_key: true |
 
 ### Association
-* belongs_to :sending_destination
 * has_one :record
 * belongs_to :user
 
@@ -56,7 +55,6 @@
 |---------------------|---------------------|-------------------------------|
 | user                | references          | null: false,foreign_key: true |
 | item                | references          | null: false,foreign_key: true |
-| sending_destinations| references          | null: false,foreign_key: true |
 
 ### Association
 
