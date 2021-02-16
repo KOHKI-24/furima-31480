@@ -38,7 +38,7 @@
 | name               | string              | null: false                   |
 | introduction       | text                | null: false                   |
 | price              | integer             | null: false                   |
-| item_condition_id  | integer             | null: false                   |
+| condition_id       | integer             | null: false                   |
 | postage_payer_id   | integer             | null: false                   |
 | prefecture_id      | integer             | null: false                   |
 | preparation_day_id | integer             | null: false                   |
