@@ -4,7 +4,7 @@
 | Column             | Type                | Options                            |
 |--------------------|---------------------|------------------------------------|
 | nickname           | string              | null: false                        |
-| email              | string              | null: false,unique: true                       |
+| email              | string              | null: false,unique: true           |
 | encrypted_password | string              | null: false　　　　　　　　　         |
 | first_name         | string              | null: false                   　　　|
 | family_name        | string              | null: false                  　　　 |
@@ -26,7 +26,7 @@
 | house_number       | string              | null: false                   |
 | building_name      | string              |                               |
 | phone_number       | string              | unique: true                  |
-| records            | references          | null: false,foreign_key: true |
+| record             | references          | null: false,foreign_key: true |
 
 ### Association
 * belongs_to :record
