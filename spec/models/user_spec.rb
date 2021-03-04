@@ -15,7 +15,4 @@ RSpec.describe User, type: :model do
   end
 end
 
-
-
-
 # ["Email can't be blank", "Family name can't be blank", "First name kana can't be blank", "Family name kana can't be blank", "Birth day can't be blank"]
