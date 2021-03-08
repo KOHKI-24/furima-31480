@@ -5,6 +5,7 @@ ja:
        nickname: ニックネーム
       #  First_name: 名前
       #  Family name: 苗字
+       birth_day: 誕生日
      tweet:
        text: テキスト
        image: 画像
